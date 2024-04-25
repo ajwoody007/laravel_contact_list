@@ -3,6 +3,7 @@
     <head>
         <title>Andy Wood Contact List App</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"" />
 
         {{-- blade-formatter-disable --}}
         <style type="text/tailwindcss">

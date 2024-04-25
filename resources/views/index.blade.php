@@ -11,14 +11,25 @@
 
     @if (count($contacts) > 0)
         I have the following {{ count($contacts) }} contacts:<br><br>
-        <ol>
+
+        <table>
+
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+            
             @foreach ($contacts as $contact)
-                <li>
-                    <a href="{{ route('contacts.show', ['contact' => $contact->id]) }}">{{ $contact->name }}</a>
-                    <a class="underline" href="{{ route('contacts.edit', ['contact' => $contact->id]) }}">Edit</a>
-                </li>
+                <tr>
+                    <td><a href="{{ route('contacts.show', ['contact' => $contact->id]) }}">{{ $contact->name }}</a></td>
+                    <td><a href="{{ route('contacts.show', ['contact' => $contact->id]) }}">{{ $contact->email }}</a></td>
+                    <td><a href="{{ route('contacts.show', ['contact' => $contact->id]) }}">{{ $contact->mobile }}</a></td>
+                    <td><a class="underline" href="{{ route('contacts.edit', ['contact' => $contact->id]) }}">Edit</a></td>
+                </tr>
             @endforeach
-        </ol>
+
+        </table>
+
     @else
         I have no contacts.
     @endif
