@@ -9,11 +9,7 @@
 
 @section('content')
 
-<<<<<<< HEAD
-    {{ $errors }}
-=======
     <!-- {{ $errors }} -->
->>>>>>> 6f08307 (laravel update 1)
 
     <form method="POST" action="{{ isset($contact) ? route('contacts.update', ['contact' => $contact->id]) : route('contacts.store') }}">
         
@@ -51,13 +47,19 @@
         </div>
 
         <div>
-            <button type="submit">
+            <button class='app_button' type="submit">
                 @isset($contact)
                     Update Contact
                 @else
                     Add Contact
                 @endisset
             </button>
+        </div>
+
+        <div>
+
+            <a class='link' href="{{ route('contacts.index') }}">Cancel</a>
+
         </div>
     
     </form>

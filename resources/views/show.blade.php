@@ -25,7 +25,7 @@
 
     <div class="mt-4 flex gap-4">
 
-        <a class="btn" href="{{ route('contacts.edit', ['contact' => $contact]) }}">Edit</a>
+        <a class="app_button" href="{{ route('contacts.edit', ['contact' => $contact]) }}">Edit</a>
 
     </div>
 
