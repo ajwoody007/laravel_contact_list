@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('contacts', function (Blueprint $table) {
+<<<<<<< HEAD
             $table->id()->primary();
+=======
+            $table->id();
+>>>>>>> 6f08307 (laravel update 1)
             $table->string('name')->nullable();
             $table->string('email')->unique();
             $table->string('mobile')->unique();

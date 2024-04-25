@@ -10,8 +10,7 @@
 </nav>
 
     @if (count($contacts) > 0)
-        I have the following {{ count($contacts) }} contacts:<br><br>
-
+        I have the following {{ count($contacts) }} contact(s):<br><br>
         <table>
 
             <th>Name</th>
