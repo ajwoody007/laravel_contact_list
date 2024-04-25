@@ -10,11 +10,19 @@
 </nav>
 
     @if (count($contacts) > 0)
+<<<<<<< HEAD
         I have the following {{ count($contacts) }} contacts:<br><br>
         <ol>
             @foreach ($contacts as $contact)
                 <li>
                     <a href="{{ route('contacts.show', ['contact' => $contact->id]) }}">{{ $contact->name }}</a>
+=======
+        I have the following {{ count($contacts) }} contact(s):<br><br>
+        <ol>
+            @foreach ($contacts as $contact)
+                <li>
+                    <a class='link' href="{{ route('contacts.show', ['contact' => $contact->id]) }}">{{ $contact->name }}</a>
+>>>>>>> 6f08307 (laravel update 1)
                     <a class="underline" href="{{ route('contacts.edit', ['contact' => $contact->id]) }}">Edit</a>
                 </li>
             @endforeach

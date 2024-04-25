@@ -9,7 +9,11 @@
 
 @section('content')
 
+<<<<<<< HEAD
     {{ $errors }}
+=======
+    <!-- {{ $errors }} -->
+>>>>>>> 6f08307 (laravel update 1)
 
     <form method="POST" action="{{ isset($contact) ? route('contacts.update', ['contact' => $contact->id]) : route('contacts.store') }}">
         
@@ -20,6 +24,7 @@
             @method('PUT')
         @endisset
 
+<<<<<<< HEAD
         <div>
             <label for="name">
                 Name
@@ -48,14 +53,73 @@
 
         <div>
             <button type="submit">
+=======
+
+        <table>
+
+            <tr>
+
+                <td><label for="name">Name: </label></td>
+                <td> 
+                    <input text="text" name="name" id="name" value="{{ $contact->name ?? old('name') }}"/>
+                    @error('name')
+                        <p class='error_message'>{{ $message }}</p>
+                    @enderror
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td><label>Email :</label></td>
+
+                <td>
+                    <input text="text" name="email" id="email" value="{{ $contact->email ?? old('email') }}"/>
+                    @error('email')
+                        <p class='error_message'>{{ $message }}</p>
+                    @enderror
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td><label>Mobile :</label></td>
+                <td>
+
+                    <input text="text" name="mobile" id="mobile" value="{{ $contact->mobile ?? old('mobile') }}"/>
+                    @error('mobile')
+                        <p class='error_message'>{{ $message }}</p>
+                    @enderror
+
+                </td>
+
+            </tr>
+
+        <table>
+
+        <div>
+            <button class='app_button mt-4' type="submit">
+>>>>>>> 6f08307 (laravel update 1)
                 @isset($contact)
                     Update Contact
                 @else
                     Add Contact
                 @endisset
             </button>
+<<<<<<< HEAD
+=======
+            <br><br>
+            <a class='link mt-4' href="{{ route('contacts.index') }}">Cancel</a>
+>>>>>>> 6f08307 (laravel update 1)
         </div>
     
     </form>
 
 @endsection
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 6f08307 (laravel update 1)

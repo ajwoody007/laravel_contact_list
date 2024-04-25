@@ -3,6 +3,10 @@
     <head>
         <title>Andy Wood Contact List App</title>
         <script src="https://cdn.tailwindcss.com"></script>
+<<<<<<< HEAD
+=======
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+>>>>>>> 6f08307 (laravel update 1)
 
         {{-- blade-formatter-disable --}}
         <style type="text/tailwindcss">
