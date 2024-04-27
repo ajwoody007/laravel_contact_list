@@ -9,3 +9,5 @@ The app allows the user to :
 
 The initial list is paginated (5 contacts per page) and the styling uses a mix of css and TailWind.
 
+The app is a work in progress and new features and styling are added regularly.
+
