@@ -1,7 +1,5 @@
 <?php
 
-// now under the control of git
-
 use App\Http\Requests\ContactRequest;
 use App\Models\Contacts;
 use Illuminate\Support\Facades\Route;
